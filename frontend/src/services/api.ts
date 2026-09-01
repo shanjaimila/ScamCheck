@@ -1,6 +1,6 @@
 import { AnalysisRequest, AnalysisResponse, CaseSummary, HealthStatus } from '../types/scamcheck';
 
-const API_BASE = '/api';
+const API_BASE = 'https://scamcheck-backend-6t64.onrender.com/api';
 
 export async function analyzeOpportunity(payload: AnalysisRequest): Promise<AnalysisResponse> {
   const res = await fetch(`${API_BASE}/analyze`, {
